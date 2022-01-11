@@ -1,19 +1,31 @@
-import Navigation from './components/navigation/navigation';
-
-import { Route, Routes } from 'react-router-dom';
-
-import Homepage from './pages/homepage';
-import WonderPage from './pages/wonder-page';
+import { Route } from 'react-router-dom';
+import { Switch, useLocation } from 'react-router';
+import routes from './data/routes';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 function App() {
+  const location = useLocation();
+
   return (
-    <>
-      <Navigation />
-      <Routes>
-        <Route path='/' exact element={<Homepage />} />
-        <Route path='/wonders/:wonder' exact element={<WonderPage />} />
-      </Routes>
-    </>
+    <TransitionGroup>
+      <CSSTransition
+        timeout={1000}
+        classNames='page'
+        key={location.key}
+        unmountOnExit
+      >
+        <Switch location={location}>
+          {routes.map(({ path, name, Component }) => (
+            <Route key={name} path={path} exact>
+              <Component />
+            </Route>
+          ))}
+          <Route key='other' path='*'>
+            <p className='copy copy-large'>Not found</p>
+          </Route>
+        </Switch>
+      </CSSTransition>
+    </TransitionGroup>
   );
 }
 

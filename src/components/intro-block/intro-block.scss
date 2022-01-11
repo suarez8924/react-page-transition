@@ -47,7 +47,7 @@
     position: relative;
     width: 100%;
     height: min-content;
-    margin-top: 4rem;
+    margin-top: 10vw;
 
     @media (min-width: $device-medium) {
       grid-column: 2/4;
@@ -55,6 +55,7 @@
     }
 
     @media (min-width: $device-large) {
+      margin-top: 0;
       grid-column: 8/-1;
       grid-row: 1/-1;
     }

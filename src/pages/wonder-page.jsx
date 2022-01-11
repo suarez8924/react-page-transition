@@ -1,14 +1,16 @@
-import { useParams } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import IntroBlock from '../components/intro-block/intro-block';
 
 import sevenWonders from '../data/seven-wonders.js';
 const WonderPage = () => {
-  const { wonder } = useParams();
-  const pageWonder = sevenWonders.filter((element) => element.id === wonder)[0];
+  const { pathname } = useLocation();
+  const pageWonder = sevenWonders.filter(
+    (element) => element.id === pathname.replace('/', '')
+  )[0];
 
   return (
-    <main className='wonder-page section-container'>
-      <IntroBlock {...pageWonder.introBlock} />
+    <main className='wonder-page section-container site-page'>
+      {pageWonder && <IntroBlock {...pageWonder.introBlock} />}
     </main>
   );
 };

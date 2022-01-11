@@ -22,11 +22,7 @@ const Navigation = () => {
         <ul className='navigation-list'>
           {sevenWonders.map(({ id, introBlock: { title } }) => (
             <li key={title} className='navigation-list-item'>
-              <NavLink
-                to={`/wonders/${id}`}
-                exact
-                className='navigation-link copy-small'
-              >
+              <NavLink to={`/${id}`} className='navigation-link copy-small'>
                 {title}
               </NavLink>
             </li>

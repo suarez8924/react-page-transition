@@ -5,42 +5,42 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Homepage,
+    Component: Homepage,
   },
   {
-    path: '/wonder/great-wall-of-chine',
+    path: '/great-wall-of-chine',
     name: 'Great Wall of China',
-    component: WonderPage,
+    Component: WonderPage,
   },
   {
-    path: '/wonder/chichen-itza',
+    path: '/chichen-itza',
     name: 'Chichén Itzá',
-    component: WonderPage,
+    Component: WonderPage,
   },
   {
-    path: '/wonder/petra',
+    path: '/petra',
     name: 'Petra',
-    component: WonderPage,
+    Component: WonderPage,
   },
   {
-    path: '/wonder/machu-picchu',
+    path: '/machu-picchu',
     name: 'Machu Picchu',
-    component: WonderPage,
+    Component: WonderPage,
   },
   {
-    path: '/wonder/christ-the-redeemer',
+    path: '/christ-the-redeemer',
     name: 'Christ the Redeemer',
-    component: WonderPage,
+    Component: WonderPage,
   },
   {
-    path: '/wonder/colosseum',
+    path: '/colosseum',
     name: 'Colosseum',
-    component: WonderPage,
+    Component: WonderPage,
   },
   {
-    path: '/wonder/taj-mahal',
+    path: '/taj-mahal',
     name: 'Taj Mahal',
-    component: WonderPage,
+    Component: WonderPage,
   },
 ];
 

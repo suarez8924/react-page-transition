@@ -52,3 +52,32 @@ a {
   margin: 0 auto;
   max-width: $max-content-width;
 }
+
+.site-page {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.page {
+  &-enter {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  &-enter-active {
+    opacity: 1;
+    transition: opacity 400ms;
+    transition-delay: 500ms;
+  }
+
+  &-exit {
+    opacity: 1;
+    transition: opacity 400ms;
+  }
+
+  &-exit-active {
+    opacity: 0;
+  }
+}
