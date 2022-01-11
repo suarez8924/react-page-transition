@@ -12,11 +12,12 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
 }
 
 body,
 html {
-  width: 100%;
   min-height: 100%;
 }
 
@@ -24,6 +25,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: $black;
   background-color: $isabelline;
+  scroll-behavior: smooth;
 }
 
 ul,
