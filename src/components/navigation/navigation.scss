@@ -1,0 +1,45 @@
+@import '../../styles/index.scss';
+
+.navigation {
+  width: 100%;
+  height: 8rem;
+
+  .inner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+  }
+
+  .main-title {
+    margin-left: 1rem;
+  }
+
+  .main-logo {
+    width: 4rem;
+  }
+
+  .navigation-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation-list-item {
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  .navigation-link {
+    cursor: pointer;
+    transition: color 200ms ease-out;
+
+    &:hover {
+      color: $light-salmon;
+    }
+  }
+}
