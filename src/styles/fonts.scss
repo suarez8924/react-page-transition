@@ -1,4 +1,6 @@
 .copy {
+  line-height: 1.4;
+
   &-small {
     font-size: 1.4rem;
   }
@@ -15,8 +17,12 @@
 .heading {
   font-family: 'Oswald', sans-serif;
 
+  &-huge {
+    font-size: 6.2rem;
+  }
+
   &-xlarge {
-    font-size: 3.2rem;
+    font-size: 4.2rem;
   }
 
   &-large {

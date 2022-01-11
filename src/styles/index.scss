@@ -26,6 +26,7 @@ body {
   color: $black;
   background-color: $isabelline;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 ul,
@@ -39,10 +40,10 @@ a {
 }
 
 .section-container {
-  padding: 0 $site-padding-mobile;
+  padding: 16rem $site-padding-mobile 8rem;
 
-  @media (min-width: 1024px) {
-    padding: 0 $site-padding-desktop;
+  @media (min-width: $device-medium) {
+    padding: 16rem $site-padding-desktop 8rem;
   }
 }
 

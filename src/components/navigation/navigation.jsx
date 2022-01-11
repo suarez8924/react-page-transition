@@ -9,22 +9,23 @@ import sevenWonders from '../../data/seven-wonders.js';
 
 const Navigation = () => {
   return (
-    <nav className="navigation section-container">
-      <div className="inner-content">
+    <nav className='navigation'>
+      <div className='inner-content'>
         <header>
-          <Link to="/" className="header-link">
-            <Logo className="main-logo" aria-labelledby="main-title" />
-            <h1 id="main-title" className="main-title heading-large">
+          <Link to='/' className='header-link'>
+            <Logo className='main-logo' aria-labelledby='main-title' />
+            <h1 id='main-title' className='main-title heading-large'>
               7 World Wonders
             </h1>
           </Link>
         </header>
-        <ul className="navigation-list">
+        <ul className='navigation-list'>
           {sevenWonders.map(({ id, introBlock: { title } }) => (
-            <li key={title} className="navigation-list-item">
+            <li key={title} className='navigation-list-item'>
               <NavLink
                 to={`/wonders/${id}`}
-                className="navigation-link copy-small"
+                exact
+                className='navigation-link copy-small'
               >
                 {title}
               </NavLink>

@@ -7,10 +7,13 @@ import WonderPage from './pages/wonder-page';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" exact element={<Homepage />} />
-      <Route path="/wonders/:wonder" exact element={<WonderPage />} />
-    </Routes>
+    <>
+      <Navigation />
+      <Routes>
+        <Route path='/' exact element={<Homepage />} />
+        <Route path='/wonders/:wonder' exact element={<WonderPage />} />
+      </Routes>
+    </>
   );
 }
 
