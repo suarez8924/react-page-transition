@@ -69,12 +69,12 @@ a {
   &-enter-active {
     opacity: 1;
     transition: opacity 400ms;
-    transition-delay: 500ms;
+    transition-delay: 300ms;
   }
 
   &-exit {
     opacity: 1;
-    transition: opacity 400ms;
+    transition: opacity 300ms;
   }
 
   &-exit-active {

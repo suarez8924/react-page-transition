@@ -1,3 +1,5 @@
+import gsap from 'gsap/all';
+import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import IntroBlock from '../components/intro-block/intro-block';
 
@@ -7,10 +9,17 @@ const WonderPage = () => {
   const pageWonder = sevenWonders.filter(
     (element) => element.id === pathname.replace('/', '')
   )[0];
+  const [shouldAnimate, setShouldAnimate] = useState(false);
+
+  useEffect(() => {
+    setShouldAnimate(true);
+  }, []);
 
   return (
     <main className='wonder-page section-container site-page'>
-      {pageWonder && <IntroBlock {...pageWonder.introBlock} />}
+      {pageWonder && (
+        <IntroBlock {...pageWonder.introBlock} shouldAnimate={shouldAnimate} />
+      )}
     </main>
   );
 };

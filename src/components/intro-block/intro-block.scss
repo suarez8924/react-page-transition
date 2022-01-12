@@ -14,7 +14,8 @@
     grid-template-columns: repeat(12, 1fr);
   }
 
-  .title {
+  .title-wrapper {
+    overflow: hidden;
     @media (min-width: $device-medium) {
       grid-column: 1/-1;
       align-self: start;
@@ -22,7 +23,7 @@
 
     @media (min-width: $device-large) {
       grid-column: 1/8;
-      padding-top: 4rem;
+      margin-top: 4rem;
     }
   }
 
@@ -42,7 +43,7 @@
     }
   }
 
-  .image-wrapper {
+  .image-container {
     display: block;
     position: relative;
     width: 100%;
@@ -76,6 +77,14 @@
       transform-origin: center;
       transform: rotate(15deg);
     }
+  }
+  .image-wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: min-content;
+    overflow: hidden;
+
     &::after {
       content: '';
       display: block;
