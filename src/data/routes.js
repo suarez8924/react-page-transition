@@ -8,7 +8,7 @@ const routes = [
     Component: Homepage,
   },
   {
-    path: '/great-wall-of-chine',
+    path: '/great-wall-of-china',
     name: 'Great Wall of China',
     Component: WonderPage,
   },

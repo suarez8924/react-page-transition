@@ -3,6 +3,7 @@
 .intro-block {
   display: grid;
   gap: 2rem;
+  padding: 8rem 0;
 
   @media (min-width: $device-medium) {
     grid-template-columns: repeat(4, 1fr);

@@ -1,6 +1,8 @@
 const sevenWonders = [
   {
-    id: 'great-wall-of-chine',
+    id: 'great-wall-of-china',
+    homeHeroImage:
+      'https://images.unsplash.com/photo-1608037521244-f1c6c7635194?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     introBlock: {
       title: 'Great Wall of China',
       description:
@@ -13,6 +15,8 @@ const sevenWonders = [
   },
   {
     id: 'chichen-itza',
+    homeHeroImage:
+      'https://images.unsplash.com/photo-1562657655-0b903655255a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80',
     introBlock: {
       title: 'Chichén Itzá',
       description:
@@ -25,6 +29,8 @@ const sevenWonders = [
   },
   {
     id: 'petra',
+    homeHeroImage:
+      'https://images.unsplash.com/photo-1580834341580-8c17a3a630ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80',
     introBlock: {
       title: 'Petra',
       description:
@@ -37,6 +43,8 @@ const sevenWonders = [
   },
   {
     id: 'machu-picchu',
+    homeHeroImage:
+      'https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     introBlock: {
       title: 'Machu Picchu',
       description:
@@ -49,6 +57,8 @@ const sevenWonders = [
   },
   {
     id: 'christ-the-redeemer',
+    homeHeroImage:
+      'https://images.unsplash.com/photo-1594387295585-34ba732932c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1630&q=80',
     introBlock: {
       title: 'Christ the Redeemer',
       description:
@@ -61,6 +71,8 @@ const sevenWonders = [
   },
   {
     id: 'colosseum',
+    homeHeroImage:
+      'https://images.unsplash.com/photo-1552432552-06c0b0a94dda?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     introBlock: {
       title: 'Colosseum',
       description:
@@ -73,6 +85,8 @@ const sevenWonders = [
   },
   {
     id: 'taj-mahal',
+    homeHeroImage:
+      'https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80',
     introBlock: {
       title: 'Taj Mahal',
       description:

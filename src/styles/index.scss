@@ -39,11 +39,16 @@ a {
   color: currentColor;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+}
+
 .section-container {
-  padding: 16rem $site-padding-mobile 8rem;
+  padding: 8rem $site-padding-mobile 0;
 
   @media (min-width: $device-medium) {
-    padding: 16rem $site-padding-desktop 8rem;
+    padding: 8rem $site-padding-desktop 0;
   }
 }
 

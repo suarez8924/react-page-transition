@@ -1,0 +1,33 @@
+@import '../../styles/index.scss';
+
+.home-hero {
+  position: relative;
+  background-color: orangered;
+  min-height: calc(100vh - #{$navbar-height});
+  width: 100vw;
+  transform: translateX(-$site-padding-mobile);
+
+  @media (min-width: $device-medium) {
+    transform: translateX(-$site-padding-desktop);
+  }
+
+  .background-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 80%;
+  }
+}
