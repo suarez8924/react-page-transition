@@ -12,27 +12,30 @@ const HomeHero = () => {
   useEffect(() => {
     const backgroundWrapper = backgroundWrapperRef.current;
     const images = gsap.utils.toArray(backgroundWrapper.children);
-    // const q = gsap.utils.selector(backgroundWrapper);
 
     backgroundTimeline.current = gsap.timeline({
       repeat: -1,
       paused: true,
-      ease: 'none',
+
+      defaults: { duration: 2, ease: 'linear' },
     });
 
-    images.reverse().forEach((image, index) => {
-      const tl = gsap.timeline();
-      if (index === 0) {
-        tl.set(image, { autoAlpha: 1 });
-      }
-      tl.to(image, { scale: 1.2, duration: 2 }).to(
-        image,
-        { autoAlpha: 0, duration: 0.5 },
-        '-=0.1'
+    gsap.set(images, { opacity: 0 });
+    gsap.set(images[0], { opacity: 1 });
+
+    backgroundTimeline.current.set(images[0], { zIndex: 0 });
+
+    images.slice(1).forEach((image) => {
+      backgroundTimeline.current.to(image, { opacity: 1 }, '+=2');
+    });
+
+    backgroundTimeline.current
+      .set(images[0], { zIndex: 1 }, '+=2')
+      .fromTo(
+        images[0],
+        { opacity: 0 },
+        { opacity: 1, immediateRender: false }
       );
-
-      backgroundTimeline.current.add(tl);
-    });
 
     backgroundTimeline.current.play();
   }, []);
@@ -50,7 +53,9 @@ const HomeHero = () => {
           />
         ))}
       </div>
-      <h2 className='hero-title'>Discover the 7 world wonders</h2>
+      <h2 className='hero-title heading heading-huge'>
+        Discover the seven world wonders
+      </h2>
       <button>
         <span>Scroll</span>
         <span>>></span>

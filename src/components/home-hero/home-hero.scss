@@ -2,10 +2,10 @@
 
 .home-hero {
   position: relative;
-  background-color: orangered;
   min-height: calc(100vh - #{$navbar-height});
   width: 100vw;
   transform: translateX(-$site-padding-mobile);
+  color: $isabelline;
 
   @media (min-width: $device-medium) {
     transform: translateX(-$site-padding-desktop);
@@ -18,6 +18,24 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.8953956582633054) 0%,
+        rgba(0, 0, 0, 0.7973564425770308) 6%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      z-index: 2;
+    }
   }
 
   .background-image {
@@ -29,5 +47,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 80%;
+  }
+
+  .hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-transform: uppercase;
   }
 }
