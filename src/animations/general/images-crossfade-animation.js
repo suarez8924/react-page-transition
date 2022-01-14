@@ -9,8 +9,7 @@ const imagesCrossfadeAnimation = (container, duration = 2) => {
     defaults: { duration, ease: 'linear' },
   });
 
-  gsap.set(images, { opacity: 0 });
-  gsap.set(images[0], { opacity: 1 });
+  gsap.set(images.slice(1), { opacity: 0 });
 
   timeline.set(images[0], { zIndex: 0 });
 
