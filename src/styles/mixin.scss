@@ -1,0 +1,12 @@
+@import './variables.scss';
+@import './media-queries.scss';
+
+@mixin full-size-section {
+  width: 100vw;
+  transform: translateX(-$site-padding-mobile);
+  padding: 0 $site-padding-mobile;
+
+  @media (min-width: $device-medium) {
+    transform: translateX(-$site-padding-desktop);
+  }
+}

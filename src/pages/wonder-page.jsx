@@ -1,4 +1,3 @@
-import gsap from 'gsap/all';
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import IntroBlock from '../components/intro-block/intro-block';
@@ -16,7 +15,7 @@ const WonderPage = () => {
   }, []);
 
   return (
-    <main className='wonder-page section-container site-page'>
+    <main className="wonder-page section-container site-page">
       {pageWonder && (
         <IntroBlock {...pageWonder.introBlock} shouldAnimate={shouldAnimate} />
       )}

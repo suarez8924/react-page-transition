@@ -1,6 +1,14 @@
 const sevenWonders = [
   {
     id: 'great-wall-of-china',
+    path: '/great-wall-of-china',
+    title: 'Great Wall of China',
+    wonderCard: {
+      image: {
+        src: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+        alt: 'Great Wall of China in fall season',
+      },
+    },
     homeHeroImage:
       'https://images.unsplash.com/photo-1608037521244-f1c6c7635194?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     introBlock: {
@@ -15,6 +23,14 @@ const sevenWonders = [
   },
   {
     id: 'chichen-itza',
+    path: '/chichen-itza',
+    title: 'Chichén Itzá',
+    wonderCard: {
+      image: {
+        src: 'https://images.unsplash.com/photo-1562657655-0b903655255a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80',
+        alt: 'Chichén Itzá',
+      },
+    },
     homeHeroImage:
       'https://images.unsplash.com/photo-1562657655-0b903655255a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80',
     introBlock: {
@@ -29,6 +45,14 @@ const sevenWonders = [
   },
   {
     id: 'petra',
+    path: '/petra',
+    title: 'Petra',
+    wonderCard: {
+      image: {
+        src: 'https://images.unsplash.com/photo-1563177682-6af44e531038?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80',
+        alt: 'Petra closeup',
+      },
+    },
     homeHeroImage:
       'https://images.unsplash.com/photo-1580834341580-8c17a3a630ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80',
     introBlock: {
@@ -43,6 +67,14 @@ const sevenWonders = [
   },
   {
     id: 'machu-picchu',
+    path: '/machu-picchu',
+    title: 'Machu Picchu',
+    wonderCard: {
+      image: {
+        src: 'https://images.unsplash.com/photo-1571492913849-fdc97148242d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80',
+        alt: 'Machu Picchu from above',
+      },
+    },
     homeHeroImage:
       'https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     introBlock: {
@@ -57,6 +89,14 @@ const sevenWonders = [
   },
   {
     id: 'christ-the-redeemer',
+    path: '/christ-the-redeemer',
+    title: 'Christ the Redeemer',
+    wonderCard: {
+      image: {
+        src: 'https://images.unsplash.com/photo-1593995863951-57c27e518295?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80',
+        alt: 'Christ the Redeemer seen from stair with a group a people',
+      },
+    },
     homeHeroImage:
       'https://images.unsplash.com/photo-1594387295585-34ba732932c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1630&q=80',
     introBlock: {
@@ -71,6 +111,14 @@ const sevenWonders = [
   },
   {
     id: 'colosseum',
+    path: '/colosseum',
+    title: 'Colosseum',
+    wonderCard: {
+      image: {
+        src: 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1096&q=80',
+        alt: 'Colosseum from outside in the evening',
+      },
+    },
     homeHeroImage:
       'https://images.unsplash.com/photo-1552432552-06c0b0a94dda?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     introBlock: {
@@ -85,6 +133,14 @@ const sevenWonders = [
   },
   {
     id: 'taj-mahal',
+    path: '/taj-mahal',
+    title: 'Taj Mahal',
+    wonderCard: {
+      image: {
+        src: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80',
+        alt: 'Taj Mahal from front',
+      },
+    },
     homeHeroImage:
       'https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80',
     introBlock: {

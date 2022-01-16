@@ -1,0 +1,39 @@
+@import '../../styles/mixin.scss';
+
+.wonders-display {
+  @include full-size-section;
+  padding: 0;
+
+  .wonders-list {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (min-width: $device-medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $device-large) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .wonder-item {
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 0;
+      padding-top: 100%;
+      display: block;
+    }
+  }
+
+  .wonder-link {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
