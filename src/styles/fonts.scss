@@ -37,7 +37,7 @@
     font-size: 1.4rem;
   }
 
-  @media (min-width: $device-medium) {
+  @include media-device-min-medium {
     &-huge {
       font-size: 6.2rem;
     }

@@ -19,7 +19,7 @@
   color: $isabelline;
   padding: 0 $site-padding-mobile;
 
-  @media (min-width: $device-medium) {
+  @include media-device-min-medium {
     transform: translateX(-$site-padding-desktop);
     padding: 0 $site-padding-desktop;
   }
@@ -103,7 +103,7 @@
     fill: currentColor;
     animation: upDown 2000ms infinite ease-in-out;
 
-    @media (min-width: $device-medium) {
+    @include media-device-min-medium {
       width: 4rem;
     }
   }

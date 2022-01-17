@@ -6,7 +6,32 @@
   transform: translateX(-$site-padding-mobile);
   padding: 0 $site-padding-mobile;
 
-  @media (min-width: $device-medium) {
+  @include media-device-min-medium {
     transform: translateX(-$site-padding-desktop);
+  }
+}
+
+//media queries
+@mixin media-device-max-small {
+  @media (max-width: calc(#{$device-small} - 1px)) {
+    @content;
+  }
+}
+
+@mixin media-device-min-medium {
+  @media (min-width: $device-medium) {
+    @content;
+  }
+}
+
+@mixin media-device-min-large {
+  @media (min-width: $device-large) {
+    @content;
+  }
+}
+
+@mixin media-device-min-xlarge {
+  @media (min-width: $device-xlarge) {
+    @content;
   }
 }

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import ImagesShowcase from '../components/images-showcase/images-showcase';
 import IntroBlock from '../components/intro-block/intro-block';
 
 import sevenWonders from '../data/seven-wonders.js';
@@ -15,9 +16,18 @@ const WonderPage = () => {
   }, []);
 
   return (
-    <main className="wonder-page section-container site-page">
+    <main className='wonder-page section-container site-page'>
       {pageWonder && (
-        <IntroBlock {...pageWonder.introBlock} shouldAnimate={shouldAnimate} />
+        <>
+          <IntroBlock
+            {...pageWonder.introBlock}
+            shouldAnimate={shouldAnimate}
+          />
+          <ImagesShowcase
+            images={pageWonder.imagesShowcase}
+            shouldAnimate={shouldAnimate}
+          />
+        </>
       )}
     </main>
   );

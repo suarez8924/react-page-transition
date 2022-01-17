@@ -1,4 +1,5 @@
 @import './variables.scss';
+@import './mixin.scss';
 @import './media-queries.scss';
 @import './fonts.scss';
 
@@ -47,7 +48,7 @@ button {
 .section-container {
   padding: 8rem $site-padding-mobile 0;
 
-  @media (min-width: $device-medium) {
+  @include media-device-min-medium {
     padding: 8rem $site-padding-desktop 0;
   }
 }

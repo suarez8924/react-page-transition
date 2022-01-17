@@ -20,6 +20,16 @@ const sevenWonders = [
         alt: 'Great Wall of China in fall season',
       },
     },
+    imagesShowcase: [
+      {
+        src: 'https://images.unsplash.com/photo-1590050371954-f8c5beb14b1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80',
+        alt: 'Standind in the Great Walls stairs',
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1590050371954-f8c5beb14b1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80',
+        alt: 'Standind in the Great Walls stairs',
+      },
+    ],
   },
   {
     id: 'chichen-itza',
@@ -42,6 +52,16 @@ const sevenWonders = [
         alt: 'Chichén Itzá',
       },
     },
+    imagesShowcase: [
+      {
+        src: 'https://images.unsplash.com/photo-1518638150340-f706e86654de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80',
+        alt: 'Snake statue and Chichen Itza in the background',
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1518638150340-f706e86654de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80',
+        alt: 'Snake statue and Chichen Itza in the background',
+      },
+    ],
   },
   {
     id: 'petra',
@@ -64,6 +84,24 @@ const sevenWonders = [
         alt: 'Petra closeup',
       },
     },
+    imagesShowcase: [
+      {
+        src: 'https://images.unsplash.com/photo-1554357475-accb8a88a330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
+        alt: 'Petra seen through a cave',
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1554357475-accb8a88a330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
+        alt: 'Petra seen through a cave',
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1554357475-accb8a88a330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
+        alt: 'Petra seen through a cave',
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1554357475-accb8a88a330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
+        alt: 'Petra seen through a cave',
+      },
+    ],
   },
   {
     id: 'machu-picchu',
@@ -86,6 +124,16 @@ const sevenWonders = [
         alt: 'Machu Picchu from above',
       },
     },
+    imagesShowcase: [
+      {
+        src: 'https://images.unsplash.com/photo-1589087575290-519f528dfe5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80',
+        alt: 'Ruins of Machu Pichu',
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1589087575290-519f528dfe5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80',
+        alt: 'Ruins of Machu Pichu',
+      },
+    ],
   },
   {
     id: 'christ-the-redeemer',
@@ -108,6 +156,16 @@ const sevenWonders = [
         alt: 'Christ the Redeemer seen from stair with a group a people',
       },
     },
+    imagesShowcase: [
+      {
+        src: 'https://images.unsplash.com/photo-1593854586136-2edae149504c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80',
+        alt: 'Sao Paulo and Christ the Redeemer with a sunset',
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1593854586136-2edae149504c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80',
+        alt: 'Sao Paulo and Christ the Redeemer with a sunset',
+      },
+    ],
   },
   {
     id: 'colosseum',
@@ -130,6 +188,16 @@ const sevenWonders = [
         alt: 'Colosseum from outside in the evening',
       },
     },
+    imagesShowcase: [
+      {
+        src: 'https://images.unsplash.com/photo-1555992828-35627f3b373f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80',
+        alt: 'Colosseum from above',
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1555992828-35627f3b373f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80',
+        alt: 'Colosseum from above',
+      },
+    ],
   },
   {
     id: 'taj-mahal',
@@ -152,6 +220,16 @@ const sevenWonders = [
         alt: 'Taj Mahal from front',
       },
     },
+    imagesShowcase: [
+      {
+        src: 'https://images.unsplash.com/photo-1523980628612-07e15ba44368?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+        alt: 'Closeup of Taj Majal fountain',
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1523980628612-07e15ba44368?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+        alt: 'Closeup of Taj Majal fountain',
+      },
+    ],
   },
 ];
 

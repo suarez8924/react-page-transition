@@ -8,11 +8,11 @@
     display: grid;
     grid-template-columns: 1fr;
 
-    @media (min-width: $device-medium) {
+    @include media-device-min-medium {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media (min-width: $device-large) {
+    @include media-device-min-large {
       grid-template-columns: repeat(3, 1fr);
     }
   }
