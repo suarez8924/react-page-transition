@@ -40,7 +40,7 @@ const HomeHero = () => {
       </div>
       <div className='home-hero-content-wrapper'>
         <h2 className='hero-title heading heading-huge'>
-          Discover the seven world wonders
+          Discover the world wonders
         </h2>
         <button className='scroll-down-cta' onClick={onScrollDownClick}>
           <span className='scroll-down-copy heading heading-large'>

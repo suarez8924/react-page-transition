@@ -15,7 +15,7 @@ const Navigation = () => {
           <Link to='/' className='header-link'>
             <Logo className='main-logo' aria-labelledby='main-title' />
             <h1 id='main-title' className='main-title heading-large'>
-              7 World Wonders
+              World Wonders
             </h1>
           </Link>
         </header>
