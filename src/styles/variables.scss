@@ -15,3 +15,10 @@ $site-padding-desktop: 10rem;
 
 //eases
 $ease-expo-out: cubic-bezier(0.19, 1, 0.22, 1);
+
+$z-layers: (
+  'default': 0,
+  'content': 1,
+  'navigation': 2,
+  'modal': 3,
+);

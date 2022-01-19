@@ -2,7 +2,7 @@ import gsap from 'gsap';
 
 const introBlockTimeline = (
   wrapper,
-  timelineConfig = { delay: 0.2, duration: 0.6, ease: 'power2.out' }
+  timelineConfig = { duration: 0.6, ease: 'power2.out' }
 ) => {
   const q = gsap.utils.selector(wrapper);
   const title = q('.title');

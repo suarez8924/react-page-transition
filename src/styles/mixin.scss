@@ -1,5 +1,6 @@
 @import './variables.scss';
 @import './media-queries.scss';
+@import './functions.scss';
 
 @mixin full-size-section {
   width: 100vw;
@@ -34,4 +35,8 @@
   @media (min-width: $device-xlarge) {
     @content;
   }
+}
+
+@mixin z-index($name) {
+  z-index: z-index($name);
 }

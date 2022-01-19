@@ -13,13 +13,7 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
   margin-right: calc(-1 * (100vw - 100%));
-}
-
-body,
-html {
-  min-height: 100%;
 }
 
 body {
@@ -28,6 +22,7 @@ body {
   background-color: $isabelline;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  min-height: 100%;
 }
 
 ul,
@@ -38,6 +33,11 @@ ol {
 a {
   text-decoration: none;
   color: currentColor;
+}
+
+svg {
+  width: 100%;
+  height: auto;
 }
 
 button {
@@ -69,7 +69,7 @@ button {
 .page {
   &-enter {
     opacity: 0;
-    z-index: 1;
+    @include z-index('content');
   }
 
   &-enter-active {
